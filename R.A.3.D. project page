@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R.A.3.D. Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="project-header">
+    <h1 class="glow-title">R.A.3.D.</h1>
+    <p>Responsive Aerial Expulsion Drone</p>
+    <a href="index.html" class="media-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+  </div>
+
+  <div class="project-content">
+    <h2>Solar-Powered Stealth UAV</h2>
+    <p>Designed for precision payload delivery with WiFi/Bluetooth tracking and launcher deployment.</p>
+    
+    <h3>Key Features</h3>
+    <ul>
+      <li>Low Observable Stealth Design</li>
+      <li>Solar Panel Integration</li>
+      <li>Precision Drop Mechanism</li>
+    </ul>
+
+    <a href="https://drive.google.com/file/d/18UqqDTayRmv1yqKZYvmaebDObvC9uRQy/view?usp=sharing" 
+       class="media-link" target="_blank">
+      <i class="fas fa-images"></i> View Media Gallery
+    </a>
+  </div>
+</body>
+</html>
