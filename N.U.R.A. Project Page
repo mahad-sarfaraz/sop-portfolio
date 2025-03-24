@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>N.U.R.A. Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="project-header">
+    <h1 class="glow-title">N.U.R.A.</h1>
+    <p>Next-Gen Unconventional Responsive Aerodynamics</p>
+    <a href="index.html" class="media-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
+  </div>
+
+  <div class="project-content">
+    <h2>Blended Wing Body Design</h2>
+    <p>Dynamic morphing elevons inspired by bird wings for enhanced aerodynamics and fuel efficiency.</p>
+    
+    <h3>Design Process</h3>
+    <ul>
+      <li>2D/3D Modeling (AutoCAD, OpenVSP)</li>
+      <li>ANSYS Simulations</li>
+      <li>NACA Airfoil Optimization</li>
+    </ul>
+
+    <a href="https://drive.google.com/drive/folders/1ZEKMApgjtVrya-5wfFvuDbW_2tRCc9uH?usp=sharing" 
+       class="media-link" target="_blank">
+      <i class="fas fa-file-pdf"></i> View Research Documents
+    </a>
+  </div>
+</body>
+</html>
