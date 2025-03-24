@@ -21,7 +21,32 @@ body {
   margin: 0 auto;
 }
 
+:root {
+  --primary: #2C2C2C;
+  --secondary: #FFFDD0;
+  --accent: #C0C0C0;
+  --gradient: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--gradient);
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .project-card {
+  width: 300px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   padding: 20px;
@@ -29,8 +54,31 @@ body {
   border: 1px solid var(--accent);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
-  color: var(--secondary); /* Creme text */
+  color: var(--secondary);
 }
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Position SAE SUPRA */
+.project-card:nth-child(4) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card:nth-child(4) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+/* Rest of your CSS (project-header, media-link, etc.) remains unchanged */
 
 .project-card:hover {
   transform: translateY(-10px);
