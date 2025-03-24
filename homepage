@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aerospace Innovations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="project-grid">
+    <!-- R.A.3.D. Card -->
+    <a href="ra3d.html" class="project-card">
+      <div class="category-tag">R&D Project</div>
+      <h2 class="glow-title">R.A.3.D.</h2>
+      <p>Solar-Powered Stealth UAV with Drop Mechanism</p>
+    </a>
+
+    <!-- N.U.R.A. Card -->
+    <a href="nura.html" class="project-card">
+      <div class="category-tag">R&D Project</div>
+      <h2 class="glow-title">N.U.R.A.</h2>
+      <p>Blended Wing Body with Adaptive Camber Elevons</p>
+    </a>
+
+    <!-- A1H Card -->
+    <a href="a1h.html" class="project-card">
+      <div class="category-tag">RC Project</div>
+      <h2>A1H Conversion</h2>
+      <p>High-Performance Balsa Wood RC Aircraft</p>
+    </a>
+  </div>
+</body>
+</html>
