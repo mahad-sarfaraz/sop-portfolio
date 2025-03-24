@@ -1,6 +1,6 @@
 :root {
   --primary: #2C2C2C;       /* Gunmetal Grey */
-  --secondary: #007BFF;     /* Electric Blue */
+  --secondary: #FFFDD0;     /* Creme Color */
   --accent: #C0C0C0;        /* Metallic Silver */
   --gradient: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
 }
@@ -12,7 +12,6 @@ body {
   color: white;
 }
 
-/* Homepage Grid */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -30,6 +29,7 @@ body {
   border: 1px solid var(--accent);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
+  color: var(--secondary); /* Creme text */
 }
 
 .project-card:hover {
@@ -37,7 +37,6 @@ body {
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-/* Project Page Styling */
 .project-header {
   text-align: center;
   padding: 50px 0;
@@ -53,7 +52,7 @@ body {
 .media-link {
   display: inline-block;
   background: var(--secondary);
-  color: white;
+  color: var(--primary); /* Gunmetal text */
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -62,11 +61,12 @@ body {
 }
 
 .media-link:hover {
-  background: #0056b3;
+  background: #E8E4C9;
 }
 
 .category-tag {
   background: var(--secondary);
+  color: var(--primary);
   padding: 5px 10px;
   border-radius: 3px;
   font-size: 0.9em;
@@ -74,7 +74,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Futuristic Animations */
 @keyframes glow {
   from { text-shadow: 0 0 10px var(--secondary); }
   to { text-shadow: 0 0 20px var(--secondary); }
