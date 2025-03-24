@@ -1,0 +1,85 @@
+:root {
+  --primary: #2C2C2C;       /* Gunmetal Grey */
+  --secondary: #007BFF;     /* Electric Blue */
+  --accent: #C0C0C0;        /* Metallic Silver */
+  --gradient: linear-gradient(135deg, #2C2C2C 0%, #1A1A1A 100%);
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--gradient);
+  color: white;
+}
+
+/* Homepage Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--accent);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Project Page Styling */
+.project-header {
+  text-align: center;
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.project-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.media-link {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: background 0.3s;
+}
+
+.media-link:hover {
+  background: #0056b3;
+}
+
+.category-tag {
+  background: var(--secondary);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Futuristic Animations */
+@keyframes glow {
+  from { text-shadow: 0 0 10px var(--secondary); }
+  to { text-shadow: 0 0 20px var(--secondary); }
+}
+
+.glow-title {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
