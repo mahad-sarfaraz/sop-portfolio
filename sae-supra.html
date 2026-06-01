@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>S.A.E. SUPRA Project</title>
+  <title>SAE Aero Design</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <div class="project-header">
-    <h1 class="glow-title">S.A.E. SUPRA</h1>
-    <p>Society of Automotive Engineers, Formula-Style Race Car Engineering</p>
+    <h1 class="glow-title">SAE Aero Design</h1>
+    <p>Competition Aircraft — 7th Place out of 30 Teams, SAE Aero Design East 2026</p>
     <a href="index.html" class="media-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
   </div>
-
   <div class="project-content">
-    <h2>Design & Fabrication</h2>
-    <p>Volunteered in S.A.E. SUPRA competition.</p>
-    
-    <h3>Project Description</h3>
-    <div class="project-description">
-      <p>S.A.E. SUPRA is a national competition in which student teams develop, build, and compete using a Formula-type car, exercising their engineering and teamwork abilities. The activity centers on innovation, performance, and practical automotive concerns.
+    <h2>Structural Design, FEA & Fabrication</h2>
+    <p>Designed, analyzed, and fabricated structural components for a 15-lb competition aircraft at Concordia University. Competed at SAE Aero Design East 2026, placing 7th in Regular class out of 30 teams.</p>
 
-Support was provided in the car’s production, including assembly, machining (e.g., welding, grinding), and structural design. Coordination within team as well as workflows were done in order to facilitate the continuity of the project on schedule as well as maintaining deadlines. MJCET (Muffakham Jah College of Engineering and Technology) had taken part at this prestigious event during the year of 2024.</p>
+    <h3>Empennage Design</h3>
+    <ul>
+      <li>Designed and detailed the complete empennage assembly including vertical stabilizers, rudders, and horizontal stabilizers in SolidWorks, generating manufacturing drawings for balsa, 3D-printed, and laser-cut structural components.</li>
+      <li>Analyzed airfoil performance across the flight Reynolds regime to inform tail surface sizing and control surface geometry.</li>
+      <li>Fabricated tail structure components applying lightweight design methodologies, optimizing material selection and geometry to meet structural and weight requirements.</li>
+    </ul>
 
-    </div>
+    <h3>Structural Failure Analysis & Fuselage Redesign</h3>
+    <ul>
+      <li>Identified a critical structural failure mode in the 2025-26 truss tailboom: under 332 N bending load, the truss recorded a maximum von Mises stress of 45.26 MPa — exceeding balsa wood's yield strength of 20 MPa and indicating structural failure.</li>
+      <li>Independently proposed and analyzed a semi-monocoque hoops and longerons replacement design using SolidWorks FEA simulation.</li>
+      <li><strong>Bending result:</strong> New design recorded 13.78 MPa — 3.3× lower stress than the truss, safely below yield.</li>
+      <li><strong>Torsional result:</strong> Truss failed at 88.53 MPa (4.4× yield). New design recorded 15.09 MPa with a safety factor of 1.33 — 5.9× more torsionally resistant.</li>
+      <li>Complete fuselage designed at 2309.4mm total length with 18 hoops and 8 longerons. Recommended plywood for hoop material to improve strength-to-weight ratio over balsa.</li>
+    </ul>
+
+    <h3>Landing Gear Development (In Progress)</h3>
+    <ul>
+      <li>Currently redesigning the landing gear system, proposing a spring/hydraulic shock absorption mechanism to replace the existing fixed gear design.</li>
+      <li>Objective is to improve impact energy absorption on landing and reduce structural load transfer to the fuselage during touchdown.</li>
+    </ul>
+
+    <h3>Tools</h3>
+    <ul>
+      <li>SolidWorks — CAD modeling, manufacturing drawings, FEA simulation (static bending and torsional analysis)</li>
+      <li>3D Printing (FDM), Laser Cutting — component fabrication</li>
+    </ul>
 
     <a href="https://drive.google.com/drive/u/1/folders/1Oot_lNfwzh5_D1moAOyklExKSA8oFGcC" 
        class="media-link" target="_blank">
