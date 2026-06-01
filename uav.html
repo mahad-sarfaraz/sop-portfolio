@@ -7,36 +7,37 @@
 </head>
 <body>
   <div class="project-header">
-        <h1 class="glow-title">UAV Aerodynamic Optimization</h1>
+    <h1 class="glow-title">UAV Aerodynamic Optimization</h1>
     <p>Environmental Monitoring UAV — 68.5% L/D Improvement</p>
     <a href="index.html" class="media-link"><i class="fas fa-arrow-left"></i> Back to Projects</a>
   </div>
-
   <div class="project-content">
-    <h2>Aerodynamic Performance Optimization<</h2>
+    <h2>Aerodynamic Performance Optimization</h2>
     <p>Fixed-wing UAV optimized for environmental monitoring at 150 km/h cruise, 5km altitude. Design objective was 10% L/D improvement — both conceptual designs exceeded it by a factor of 6.</p>
-    
+
     <h3>Key Results</h3>
     <ul>
-      <li><strong>Conceptual UAV I:</strong> 59.1% improvement in L/D ratio at α = 2° cruise condition, using S2091-101-83 airfoil with forward-swept wing geometry.
+      <li><strong>Conceptual UAV I:</strong> 59.1% improvement in L/D ratio at α = 2° cruise condition, using S2091-101-83 airfoil with forward-swept wing geometry.</li>
+      <li><strong>Conceptual UAV II:</strong> 68.5% improvement in L/D ratio at α = 2°, using E387 airfoil — the most widely wind-tunnel tested low Reynolds number airfoil, validated at NASA Langley, Delft, Stuttgart, and Princeton.</li>
+      <li><strong>Induced drag reduced by ~40%</strong> through aspect ratio increase from 13.0 to 26.0, taper ratio of 0.41 approximating elliptical spanwise lift distribution, and forward sweep angle of −6.48°.</li>
+      <li>XFOIL results validated against Anderson experimental data for NACA 2412, confirming model reliability in attached flow conditions.</li>
     </ul>
- <li><strong>Conceptual UAV II:</strong> 68.5% improvement in L/D ratio at α = 2°, using E387 airfoil — the most widely wind-tunnel tested low Reynolds number airfoil, validated at NASA Langley, Delft, Stuttgart, and Princeton.</li>
-  <li><strong>Induced drag reduced by ~40%</strong> through aspect ratio increase from 13.0 to 26.0, taper ratio of 0.41 approximating elliptical spanwise lift distribution, and forward sweep angle of −6.48°.</li>
-  <li>XFOIL results validated against Anderson experimental data for NACA 2412, confirming model reliability in attached flow conditions.</li>
-</ul>
+
     <h3>Methodology</h3>
-<ul>
-  <li>2D airfoil analysis performed in XFOIL at Re = 3×10⁶, sweeping angle of attack from −5° to 15° across candidate airfoils.</li>
-  <li>3D full aircraft analysis conducted in XFLR5 using four analytical methods: 3D Panel Method, Lifting Line Theory (LLT), inviscid VLM1, and viscous VLM2. Viscous VLM2 selected as primary method for incorporating boundary layer corrections from 2D polars.</li>
-  <li>Wing geometry modifications included: wingspan increase (20m → 25m), forward sweep (Λ = −6.48°), increased washout twist (−2° at tip), and optimized taper ratio (λ = 0.41).</li>
-  <li>Stability tradeoff identified: L/D optimization produced stronger nose-down pitching moments (CM more negative), flagged for tail redesign in future design stages.</li>
-</ul>
-<h3>Tools</h3>
-<ul>
-  <li>XFLR5 — 3D aerodynamic simulation (Panel Method, LLT, VLM1, VLM2)</li>
-  <li>XFOIL — 2D airfoil analysis with viscous boundary layer solver</li>
-  <li>WebPlotDigitizer — experimental data extraction for XFOIL validation</li>
-</ul>
+    <ul>
+      <li>2D airfoil analysis performed in XFOIL at Re = 3×10⁶, sweeping angle of attack from −5° to 15° across candidate airfoils.</li>
+      <li>3D full aircraft analysis conducted in XFLR5 using four analytical methods: 3D Panel Method, Lifting Line Theory (LLT), inviscid VLM1, and viscous VLM2. Viscous VLM2 selected as primary method for incorporating boundary layer corrections from 2D polars.</li>
+      <li>Wing geometry modifications included: wingspan increase (20m → 25m), forward sweep (Λ = −6.48°), increased washout twist (−2° at tip), and optimized taper ratio (λ = 0.41).</li>
+      <li>Stability tradeoff identified: L/D optimization produced stronger nose-down pitching moments (CM more negative), flagged for tail redesign in future design stages.</li>
+    </ul>
+
+    <h3>Tools</h3>
+    <ul>
+      <li>XFLR5 — 3D aerodynamic simulation (Panel Method, LLT, VLM1, VLM2)</li>
+      <li>XFOIL — 2D airfoil analysis with viscous boundary layer solver</li>
+      <li>WebPlotDigitizer — experimental data extraction for XFOIL validation</li>
+    </ul>
+
     <a href="https://drive.google.com/drive/folders/1tuNUzooMbbztx96mCoyslGFwfLqxLEkb?usp=sharing" 
        class="media-link" target="_blank">
       <i class="fas fa-images"></i> View Media Gallery
